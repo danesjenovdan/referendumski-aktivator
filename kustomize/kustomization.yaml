@@ -8,4 +8,4 @@ resources:
 images:
   - name: referendumski-aktivator-referendum-dostojna-smrt-2025
     newName: rg.fr-par.scw.cloud/djnd/referendumski-aktivator-referendum-dostojna-smrt-2025
-    newTag: "latest"
+    newTag: 'c352dd5b46f52ca2599b3c09578d146667ffe47a'
