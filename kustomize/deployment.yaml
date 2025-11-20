@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: referendumski-aktivator-referendum-dostojna-smrt-2025
+  labels:
+    app: referendumski-aktivator-referendum-dostojna-smrt-2025
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: referendumski-aktivator-referendum-dostojna-smrt-2025
+  template:
+    metadata:
+      labels:
+        app: referendumski-aktivator-referendum-dostojna-smrt-2025
+    spec:
+      containers:
+        - name: referendumski-aktivator-referendum-dostojna-smrt-2025
+          image: referendumski-aktivator-referendum-dostojna-smrt-2025
+          ports:
+            - containerPort: 80
+          resources:
+            requests:
+              memory: 25Mi
+              cpu: 25m
+            limits:
+              memory: 25Mi
+              cpu: 25m
