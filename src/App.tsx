@@ -17,27 +17,28 @@ const App: React.FC = () => {
   const totalImpact = items.reduce((a, b) => a + b.impact, 0);
 
   const handleShare = async () => {
-    const shareData = {
-      title: 'Referendumski aktivator',
-      text: 'Ugotovi, kaj še moraš storiti, da bo v nedeljo sprejet zakon o dostojni smrti.',
-      url: window.location.href
-    };
+    // const shareData = {
+    //   title: 'Referendumski aktivator',
+    //   text: 'Ugotovi, kaj še moraš storiti, da bo v nedeljo sprejet zakon o dostojni smrti.',
+    //   url: window.location.href
+    // };
 
-    if (navigator.share) {
+    // if (navigator.share) {
+    //   try {
+    //     await navigator.share(shareData);
+    //   } catch (err) {
+    //     console.log('Error sharing', err);
+    //   }
+    // } else {
       try {
-        await navigator.share(shareData);
-      } catch (err) {
-        console.log('Error sharing', err);
-      }
-    } else {
-      try {
-        await navigator.clipboard.writeText(window.location.href);
+        const copyText = `Povečaj udeležbo na referendumu o dostojni smrti!\n${window.location.href}`;
+        await navigator.clipboard.writeText(copyText);
         setShowCopiedToast(true);
         setTimeout(() => setShowCopiedToast(false), 3000);
       } catch (err) {
         console.error('Failed to copy', err);
       }
-    }
+    // }
   };
 
   return (
