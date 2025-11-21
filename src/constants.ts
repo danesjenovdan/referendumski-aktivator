@@ -7,8 +7,8 @@ export const INITIAL_ITEMS: ChecklistItem[] = [
     description: 'Veš, kje moraš oddati glas? Preveri na vabilu ali e-Upravi.',
     isCompleted: false,
     impact: 5,
-    link: 'https://e-uprava.gov.si/si/podrocja/drzava-druzba/volitve-referendumi/volisca.html',
-    linkText: 'e-Uprava: Iskalnik volišč'
+    link: 'https://www.dvk-rs.si/volisca/',
+    linkText: 'Iskalnik volišč'
   },
   {
     id: 'new_1',
@@ -44,7 +44,7 @@ export const INITIAL_ITEMS: ChecklistItem[] = [
     description: 'Na družbenih omrežjih si lahko k profilni sliki dodaš priponko podpore.',
     isCompleted: false,
     impact: 10,
-    link: 'https://mojezivljenje.si/',
+    link: 'https://vodici.djnd.si/referendum/dostojna-smrt/priponka-podpore/',
     linkText: 'Priponka podpore'
   },
   {
